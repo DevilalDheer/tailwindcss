@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body>
+<div class="bg-white pl-5 pr-5">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <div class="flex items-center justify-center bg-emerald-950 text-white pt-1 pb-1">
+      <span>Open your account here to get cashback upto 10% </span>
+        <a href="#" class="m-1 p-1 underline ">
+          <span underline >Learn How</span>
+        </a>
+    </div>
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <img class="h-8 w-auto" src="public/logo.png" alt="">
+        </a>
+      </div>
+      <div class="flex lg:hidden bg-white">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Service</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Why Us</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Testimonial</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">FAQ</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="bg-white-500 text-black border border-gray-40 font-bold py-2 px-4 rounded-full pl-2">Log in <span aria-hidden="true"></span></a>
+        <a href="#" class="bg-green-500 text-white font-bold py-2 px-4 rounded-full pl-2">Sign Up <span aria-hidden="true"></span></a>
+      </div>
+    </nav>
+
+    <div class="lg:hidden" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 z-50"></div>
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <img class="h-8 w-auto" src="public/logo.png" alt="">
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Service</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Why Us</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Testimonial</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">FAQ</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+            </div>
+            <div class="py-6">
+                <a href="#" class="bg-white-500 text-black border border-gray-40 font-bold py-2 px-4 rounded-full pl-2">Log in <span aria-hidden="true"></span></a>
+                <a href="#" class="bg-green-500 text-white font-bold py-2 px-4 rounded-full pl-2">Sign Up <span aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="relative isolate px-6 pt-40 lg:px-8 grid grid-cols-2">
+    <div class="mx-auto pt-14 py-4 sm:py-2 lg:py-2 grid-cols-2">
+      <div class="hidden sm:mb-8 sm:flex">
+        <div class="text-green-700">
+          | The Marketing Toolkit.
+        </div>
+      </div>
+      <div>
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Mastering Proven Strategies That Drive Real Results</h1>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Unleash the power of strategic marketing with our comprehensive course, designed to empower you with the skills and knowledge necessary to navigate the dynamic landscape of modern business.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#" class="bg-green-500 text-white font-bold py-2 px-4 rounded-full pl-2">Enroll Now<span aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto pt-14 py-4 sm:py-4 lg:py-2">
+      <div class="hidden sm:mb-8 sm:flex">
+        <div class="">
+          <img class="h-85 w-auto" src="public/banner1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <b class="px-10">What they say about us</b>
+  <div class="relative isolate px-6 pt-14 lg:px-8 grid grid-cols-3">
+    <div class="mx-auto py-3 sm:py-4 lg:py-5">
+      <div class="mt-2 p-2 lg:mt-0 lg:max-w-md lg:flex-shrink-0">
+        <div class="rounded-2xl bg-gray-50 py-10 ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:py-16">
+          <div class="mx-auto max-w-xs px-8">
+            <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+               <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+               </svg>
+                <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                &nbsp;4.0
+             </div>
+            <p class="mt-6 text-xs text-gray-600">The course changed my whole concepts regarding landing pages.</p>
+            <p class="mt-6 flex items-baseline gap-x-2">
+              <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">Young Alaska, London</span>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="mx-auto py-3 sm:py-4 lg:py-5">
+      <div class="mt-2 p-2 lg:mt-0 lg:max-w-md lg:flex-shrink-0">
+        <div class="rounded-2xl bg-gray-50 py-10 ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:py-16">
+          <div class="mx-auto max-w-xs px-8">
+            <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+               <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+               </svg>
+                <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                &nbsp;4.0
+             </div>
+            <p class="mt-6 text-xs text-gray-600">The course changed my whole concepts regarding landing pages.</p>
+            <p class="mt-6 flex items-baseline gap-x-2">
+              <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">Young Alaska, London</span>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="mx-auto py-3 sm:py-4 lg:py-5">
+      <div class="mt-2 p-2 lg:mt-0 lg:max-w-md lg:flex-shrink-0">
+        <div class="rounded-2xl bg-gray-50 py-10 ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:py-16">
+          <div class="mx-auto max-w-xs px-8">
+            <div class="flex items-center">
+              <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+               <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+               </svg>
+                <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                &nbsp;4.0
+             </div>
+            <p class="mt-6 text-xs text-gray-600">The course changed my whole concepts regarding landing pages.</p>
+            <p class="mt-6 flex items-baseline gap-x-2">
+              <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">Young Alaska, London</span>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative isolate px-6 pt-10 lg:px-8 grid grid-cols-2">
+    <div class="mx-auto pt-14 py-6 sm:py-4 lg:py-5">
+      <div class="hidden sm:mb-8 sm:flex">
+        <div class="text-green-700">
+          | Pricing
+        </div>
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Choose the pricing that works best for you</h1>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="relative isolate px-6 pt-10 lg:px-8 grid grid-cols-2">
+      <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+        <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+          <div class="mx-auto max-w-xs px-8">
+            <p class="text-3xl font-bold tracking-tight text-gray-900">Monthly Subscription</p>
+            <p class="text-base font-semibold text-gray-600">Fuel your product workflow with more advance research features</p>
+            <p class="mt-6 flex items-baseline justify-center gap-x-2">
+              <span class="text-5xl font-bold tracking-tight text-gray-900">$49</span>
+              <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">/month</span>
+            </p>
+            <br>
+            <a href="#" class="bg-green-500 text-white font-bold py-2 px-4 rounded-full pl-2">Enroll Now<span aria-hidden="true"></span></a>
+            <br>
+            <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                <li class="flex items-center">
+                    <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                     </svg>
+                    Money Back guarantee
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                     </svg>
+                    Satisfaction guaranteed
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+        <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+          <div class="mx-auto max-w-xs px-8">
+            <p class="text-3xl font-bold tracking-tight text-gray-900">One Time Payment</p>
+            <p class="text-base font-semibold text-gray-600">Fuel your product workflow with more advance research features</p>
+            <p class="mt-6 flex items-baseline justify-center gap-x-2">
+              <span class="text-5xl font-bold tracking-tight text-gray-900">$299</span>
+              <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">(Save 20%)</span>
+            </p>
+            <br>
+            <a href="#" class="bg-green-500 text-white font-bold py-2 px-4 rounded-full pl-2">Enroll Now<span aria-hidden="true"></span></a>
+            <br>
+            <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                <li class="flex items-center">
+                    <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                     </svg>
+                    At least 10 characters
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                     </svg>
+                    At least one lowercase character
+                </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="relative isolate px-6 pt-40 lg:px-8 grid grid-cols-2 bg-teal-800">
+    <div class="mx-auto pt-14 py-6 sm:py-4 lg:py-5 grid-cols-2">
+      <div>
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-white">Mastering Proven Strategies That Drive Real Results</h1>
+        <p class="mt-6 text-lg leading-8 text-gray-600 text-white">Unleash the power of strategic marketing with our comprehensive course, designed to empower you with the skills and knowledge necessary to navigate the dynamic landscape of modern business.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#" class="bg-green-500 text-white font-bold py-2 px-4 rounded-full pl-2">Enroll Now<span aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto pt-14 py-6 sm:py-4 lg:py-5">
+      <div class="hidden sm:mb-8 sm:flex">
+        <div class="">
+          <img class="h-85 w-auto" src="public/banner1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex items-center bg-emerald-950 text-white pt-10 pb-10 grid grid-cols-2  ">
+    <div class="pl-20 pr-20">We make onboaring new employee ridiculously easy, On day one they ready to go and retaining them as easier. </div>
+    <div class="grid grid-cols-3 ">
+      <ul class="max-w-md space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
+        <li>
+            Home
+          </li>
+          <li>
+            Why Us
+          </li>
+          <li>
+            Deals
+          </li>
+      </ul>
+      <ul class="max-w-md space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
+        <li>
+            Service
+          </li>
+          <li>
+            Case Study
+          </li>
+          <li>
+            Plan
+          </li>
+      </ul>
+      <ul class="max-w-md space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
+        <li>
+            Testimonal
+          </li>
+          <li>
+            FAQ
+          </li>
+          <li>
+            About
+          </li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
